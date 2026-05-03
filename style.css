@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    --secondary-color: #2ecc71;
+    --secondary-hover: #27ae60;
+    --text-color: #333;
+    --font-primary: "Roboto", sans-serif;
+    --input-font: 1rem;
+    --header-font: 3.6rem;
+    --subheader-font: 3.2rem;
+    --text-size: 1.6rem;
+    --space-small: 1.2rem;
+    --space-medium: 1.6rem;
+    --space-large: 2rem;
+    --space-xlarge: 2.4rem;
+}
+html{
+    font-size: 62.5%;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-medium);
+    color: var(--text-color);
+    background: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+.hero-logo{
+    font-size: var(--header-font);
+    font-weight: bold;
+}
+.nav-links{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-links ul{
+    display: flex;
+    gap: var(--space-xlarge);
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: var(--text-size);
+    font-family: var(--font-primary);
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    display:block;
+    color: var(--secondary-color);
+    transform: scale(1.05)
+}
+
+.hero-section {
+    height: 50vh;
+    background: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: var(--subheader-font);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+    padding: 1rem 1rem;
+    width: 35rem;
+    border-radius: 5px;
+    font-size: var(--input-font);
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 1rem 1rem;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: var(--input-font);
+}
+.search-bar button:hover {
+    background: var(--secondary-hover);
+}
+.section-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 4rem 5% 2rem;
+}
+
